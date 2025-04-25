@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - jastin salvatory pius</title>
+  <meta name="description" content="Learn more about jastin salvatory, a Computer Science student with web development skills." />
+  <meta name="keywords" content="computer science, web development, portfolio, skills, education, HTML, CSS, JS" />
+  <meta name="author" content="jastin salvatory" />
+  <link rel="stylesheet" href="general-style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    } 
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .about-left,
+    .about-right {
+      flex: 1;
+      min-width: 300px;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1{
+      color: white;
+    }
+     h2 {
+      color: #007bff;
+    }
+
+    figure {
+      margin: 0 0 15px;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .highlight {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .skills-list ul,
+    .interests-list {
+      list-style-type: disc;
+    }
+
+    .skills-list > li {
+      margin-top: 10px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    body.dark-mode .about-left,
+    body.dark-mode .about-right {
+      background-color: #1e1e1e;
+    }
+
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 5px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="survey.html">Survey</a>
+    </nav>
+    <button id="themeToggle">Toggle Theme</button>
+  </header>
+
+  <main>
+    <section class="about-container">
+      <!-- Left Column -->
+      <div class="about-left">
+        <h1>About Me</h1>
+        <figure>
+          <img src="9784.jpg" alt="jastin salvatory Profile Picture">
+          <figcaption>jastin salvatory – Continuing Computer Science Student</figcaption>
+        </figure>
+        <p>Hello! I'm <span class="highlight">jastin salvatory</span>, a passionate student of Computer Science at The University of Dodoma. I'm driven by curiosity, creativity, and the desire to build smart solutions for real-world problems.</p>
+        <p>I recently completed training in <span class="highlight">HTML5, CSS3, JavaScript</span>, and <span class="highlight">Python Flask</span>. I'm enthusiastic about front-end and back-end web development, responsive UI/UX, and data-driven applications.</p>
+        <p>Currently, I'm deepening my skills in <span class="highlight">machine learning, data science, and full-stack development</span>, and building real-world projects to sharpen my craft.</p>
+
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li><strong>Web Development:</strong>
+            <ul>
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>Python Flask</li>
+              <li>Responsive Design</li>
+            </ul>
+          </li>
+          <li><strong>Programming Languages:</strong>
+            <ul>
+              <li>Python, Java, C++ (Basics), PHP</li>
+            </ul>
+          </li>
+          <li><strong>Databases:</strong>
+            <ul><li>MySQL</li></ul>
+          </li>
+          <li><strong>Tools & Technologies:</strong>
+            <ul>
+              <li>Git, VS Code, Jupyter, IntelliJ IDEA</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Column -->
+      <div class="about-right">
+        <h2>My Interests</h2>
+        <ul class="interests-list">
+          <li>Exploring new web technologies and frameworks</li>
+          <li>Contributing to open-source projects</li>
+          <li>Learning algorithms and data structures</li>
+          <li>Machine learning</li>
+          <li>Data science</li>
+        </ul>
+
+        <h2>Education</h2>
+        <p><strong>B.Sc. in Computer Science (Ongoing)</strong><br>
+        University of Dodoma, Tanzania<br>
+        Expected Graduation: 2026</p>
+
+        <p><strong>Web Development Training</strong><br>
+        UDOM, Tanzania<br>
+        July 2024 – September 2024</p>
+
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:jastinsalvatory10@gmail.com">jastinsalvatory10@gmail.com</a></p>
+        <p>LinkedIn: <a href="www.linkedin.com/in/jastin-salvatory-760095321" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/jastin-salvatory-760095321</a></p>
+        <p>GitHub: <a href="https://github.com/jastin0012/jastin0012" target="_blank" rel="noopener noreferrer">https://github.com/jastin0012/jastin0012</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 jastin salvatory. All rights reserved.
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('themeToggle');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+      }
+
+      toggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('theme',
+          document.body.classList.contains('dark-mode') ? 'dark' : 'light'
+        );
+      });
+    });
+  </script>
+</body>
+</html>
